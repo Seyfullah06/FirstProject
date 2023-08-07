@@ -36,4 +36,4 @@ public class EmailManager {
 
 // git config --global user.name "Seyfullah06"
 
-//git config --global user.email "sbucak@gmail.com"
+//git config --global user.email "sbucak6806@gmail.com"
