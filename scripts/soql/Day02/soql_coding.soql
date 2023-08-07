@@ -1,0 +1,40 @@
+// SELECT Name, ApiVersion, Body
+// FROM ApexTrigger
+
+// SELECT Id, Username, FirstName, LastName,  ProfileId    
+// FROM User
+
+// SELECT Id, Name
+// FROM Profile 
+
+// Feel free to use SOQL Building(by flipping the page)
+// to observe what's the correct Object name and fields names 
+
+// Get All the Profiles Id, Name fields 
+// if the profile name is 
+// System Administator, Standard User , Standard Platform User
+
+
+// Get All the Roles , Id, Name From Role Standard Object 
+// Get All the Group, Id, Name from Group Standart object (recordType)
+// this is where all public groups, queues stored 
+
+//SELECT Id, Name
+//FROM Profile
+//WHERE Name IN('System Administrator', 'Standard User' , 'Standard Platform User')
+
+
+//SELECT Id, Name, DeveloperName  
+//FROM Role
+
+//SELECT Id, DeveloperName, Name
+//FROM Group
+
+//SELECT Id, DeveloperName, Type
+//FROM Group
+
+//SELECT Id, DeveloperName, UserType
+//FROM Profile
+
+SELECT Id, Author__c, Price__c, Description__c
+  FROM Book__c

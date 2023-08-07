@@ -1,0 +1,61 @@
+// Get all Contact Name and Account Name that contact belong to 
+// Filter the contact to only show contact with Account 
+
+//SELECT Name, AccountId, Account.Name
+//FROM Contact
+//WHERE AccountId != NULL
+
+// Get all Case Subject and Account Name that Case belong to 
+// Filter the Case to only show Case with Account 
+ 
+
+//SELECT Subject, Account.Name 
+//FROM Case
+//WHERE AccountId != null
+
+//SELECT Subject, Account.Name 
+//FROM Case
+//WHERE Account.Name != null
+
+// Get all the casre records Subject and Account Name
+//  that belong to Account with Name 
+// starts with United
+
+//SELECT Subject, Account.Name 
+//FROM Case
+//WHERE Account.Name LIKE 'United%'
+
+//SELECT Subject, Account.Name, Contact.Name  
+//FROM Case
+//WHERE Account.Name LIKE 'United%'
+
+//SELECT Subject, Account.Name, Contact.Name, CreatedBy.Name  
+//FROM Case
+//WHERE Account.Name LIKE 'United%'
+
+//Get all opportunit Name, owner name, account name 
+// from opportunity 
+
+//SELECT Name, Owner.Name, Account.Name 
+//FROM Opportunity
+
+//SELECT Name, Price__c, Contact__r.Name 
+//FROM Book__c
+//ORDER BY Contact__r.Name ASC NULLS LAST
+
+// Get All the Books Name, Price, Contact Name 
+// Sort the result by Conact Name and show empty values on the botton 
+// Filter the result to show only Books with Contact Name Snow
+// SELECT Name, Price__c, Contact__r.Name 
+// FROM Book__c
+// WHERE Contact__r.Name = 'Snow'
+
+//SELECT COUNT(Id)
+//FROM Opportunity
+
+//SELECT COUNT(Id), SUM(Amount), MAX(Amount), MIN(Amount)
+//FROM Opportunity
+
+// count_distinct count unique names 
+// SELECT COUNT(Id), COUNT_DISTINCT(Name),  SUM(Amount), MAX(Amount), MIN(Amount)
+// FROM Opportunity

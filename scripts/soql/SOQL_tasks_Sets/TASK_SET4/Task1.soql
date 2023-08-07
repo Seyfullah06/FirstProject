@@ -1,0 +1,9 @@
+//## Task 1: 
+//Write a SOQL SELECT statement (Child to Parent) to 
+//retrieve the Name ,Account.Name and Email fields 
+//for all Contact records associated with an Account record 
+//where the Account.Name is equal to a Super Parent.
+
+SELECT Name, Account.Name, Email  
+FROM Contact  
+WHERE Account.Name = 'Super Parent'

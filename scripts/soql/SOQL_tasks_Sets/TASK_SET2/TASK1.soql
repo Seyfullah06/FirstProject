@@ -1,0 +1,8 @@
+//1. Create a Custom Object Boat with Fields:
+  // - Boat Name (Text)
+   //- Length (Number)
+   // Color (Text)
+   //- Year Built (Date)
+   //- Current Owner (Lookup to Account)
+
+   

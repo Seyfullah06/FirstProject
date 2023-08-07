@@ -1,0 +1,8 @@
+//2. Write a SOQL SELECT statement to retrieve all records from the Lead object, including Name ,Salutation,
+// Title, Company, Phone , State, Email 
+  // - Filter the result using below criteria 
+   //- State is not Null 
+
+SELECT NAME, Salutation, Title, Company, Phone, State, Email  
+FROM Lead
+WHERE State!=Null

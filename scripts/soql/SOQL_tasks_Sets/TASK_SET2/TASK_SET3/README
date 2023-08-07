@@ -1,0 +1,49 @@
+## Task 1: 
+Write a SOQL query to retrieve the maximum Amount for all Opportunity records.
+
+## Task 2: 
+Write a SOQL query to retrieve the minimum CreatedDate for all Case records.
+
+## Task 3: 
+Write a SOQL query to retrieve the average NumberOfEmployees for all Account records where the Industry is 'Technology'.
+
+## Task 4: 
+Write a SOQL query to retrieve the sum of Amount for all Opportunity records where the StageName is 'Closed Won'.
+
+## Task 5: 
+Write a SOQL query to retrieve the maximum CreatedDate for all Account records where the Type is 'Prospect'.
+
+## Task 6: 
+Write a SOQL query to retrieve the average ExpectedRevenue for all Opportunity records where the CloseDate is in the current year.
+
+## Task 7: 
+Write a SOQL query to retrieve the sum of NumberOfEmployees for all Account records where the Type is 'Customer' and the Industry is 'Finance'.
+
+## Task 8: 
+Write a SOQL query to retrieve the minimum LastModifiedDate for all Lead records where the Status is 'Open'.
+
+## Task 9: 
+Write a SOQL query to retrieve the average Amount for all Opportunity records where the StageName is not equal to 'Closed Won'.
+
+## Task 10: 
+Write a SOQL query to retrieve the count of Case records where the Priority is High'.
+
+## Task 11: 
+Write a SOQL query to 
+retrieve the Type and the count of Account records 
+for each Type where the count of records is greater than 5.
+
+## Task 12: 
+Write a SOQL query to 
+retrieve the Industry, the maximum AnnualRevenue, and the count of Account records 
+for each Industry where the maximum AnnualRevenue is greater than 1000000.
+
+## Task 13: 
+Write a SOQL query to 
+retrieve the LeadSource, the average NumberOfEmployees, and the count of Lead records 
+for each LeadSource where the average NumberOfEmployees is greater than 50.
+
+## Task 14: 
+Write a SOQL query to 
+retrieve the StageName, the sum of Amount, and the count of Opportunity records 
+for each StageName where the sum of Amount is greater than 1000000. 

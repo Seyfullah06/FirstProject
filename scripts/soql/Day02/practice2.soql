@@ -1,0 +1,103 @@
+//SELECT Id, Description__c, Author__c, Year__c
+ // FROM Book__c
+
+//SELECT  Id, Author__c, Price__c, Description__c, Year__c
+//FROM Book__c
+//WHERE Description__c != NULL
+//OR Price__c != NULL 
+
+
+// How to get All the fields
+// FIELDS (ALL)
+
+//SELECT FIELDS(ALL)
+//FROM Account 
+//LIMIT 200
+
+//SELECT FIELDS(CUSTOM)
+//FROM Account 
+//LIMIT 200
+
+//SELECT FIELDS(Standard)
+//FROM Account 
+//LIMIT 200
+
+//SELECT FIELDS(ALL)
+//FROM Book__c
+//LIMIT 200
+
+// LIKE  % (WILD CARD, it can represent 0 or more characters )
+// Get all contacts First Name and LastName 
+// if FirstName starts with letter JO  
+
+//SELECT FirstName, LastName
+//FROM Contact
+//WHERE FirstName LIKE 'JO%'
+
+// LIKE  % (WILD CARD, it can represent 0 or more characters )
+// Get all contacts First Name and LastName 
+// if FirstName starts with letter A 
+
+//SELECT FirstName, LastName
+//FROM Contact
+//WHERE FirstName LIKE 'A%'
+
+
+// Get all contacts First Name and LastName 
+// if FirstName contains letter A  
+// We can use LIKE '%A%'  
+// it matches  Alba, Game, Apex, Battery, Alberta
+//SELECT FirstName, LastName
+// FROM Contact
+// WHERE FirstName LIKE '%A%'
+
+// IT matches Andy, asly...
+// IF first name starts with A and ends with Y
+//SELECT FirstName, LastName
+//FROM Contact
+// WHERE FirstName LIKE 'A%Y'
+
+// we can use LIKE 'A__Y' one underscore one charecter, two underscore means two character 
+
+//SELECT FirstName, LastName
+//FROM Contact
+//WHERE FirstName LIKE '____' 
+// four underscore means IT has four character 
+
+// Get 
+//SELECT FirstName, LastName 
+//FROM Contact
+//WHERE CreatedDate < 2003-03-22T00:00:00Z 
+
+
+
+// GET alll the contacts created Today 
+// if you use actual date 
+// SOQL require dATE ALONG with the time exactly in this format 
+// 2023-03-23T12:45:08Z
+// TODAY  YESTERDAY TOMORROW THIS_WEEK LAST_WEEK NEXT_MONTH 
+//LAST_90_DAYS NEXT_90_DAYS 
+// LAST_N_DAYS:15    
+//N_DAYS_AGO=25
+//NEXT_N_WEEKS:4
+
+
+//SELECT FirstName, LastName 
+//FROM Contact
+//WHERE CreatedDate = Today
+
+//SELECT FirstName, LastName 
+//FROM Contact
+//WHERE CreatedDate = YESTERDAY 
+
+// GET ALL THE OPPORTYUNITY CREATED PAST 2 WEEKS SELECT
+//SELECT Name, CloseDate, StageName, CreatedDate  
+//FROM Opportunity 
+//WHERE CreatedDate = LAST_N_WEEKS:2
+
+// last 3 montsh 
+// SELECT Name, CloseDate, StageName, CreatedDate  
+//FROM Opportunity 
+//WHERE CreatedDate = LAST_90_DAYS
+//ORDER BY CloseDate DESC 
+
